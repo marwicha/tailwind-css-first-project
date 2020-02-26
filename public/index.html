@@ -15,12 +15,17 @@
     href='/build/tailwind.css'>
 
 </head>
-<body class="bg-gray-100">
 
+<body class="bg-gray-300">
+
+    <div class="bg-gray-100 flex">
+        
     <div class="
+    lg:w-1/2
     px-8 py-12 
     max-w-md 
     sm:max-w-xl
+    lg:max-w-full
     mx-auto">
 
         <img class="h-10" 
@@ -32,7 +37,9 @@
         sm:w-full
         sm:object-cover
         sm:object-center
-        rounded-lg shadow-xl"
+        rounded-lg shadow-xl
+        lg:hidden
+        "
 
          src="/img/beach-work.jpg">
 
@@ -84,9 +91,22 @@
             "> Book your escape 
             </a>
          </div>
-         
+
     </div>
     
-   
+        <div class="hidden lg:block lg:w-1/2 lg:relative">
+
+            <img class="
+             absolute inset-0
+             h-full
+             w-full
+             object-cover
+             object-center"
+    
+             src="/img/beach-work.jpg">
+
+         </div>
+
+        </div>
 </body>
 </html>
